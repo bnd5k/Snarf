@@ -1,7 +1,17 @@
-<h1>
-  Welcome to {{title}}!
-</h1>
-<div class="date-area">
-  <h2>Pick a date</h2>
-</div>
+<div class="container">
+
+  <h1>
+    Welcome to {{title}}
+  </h1>
+
+  <div class="date-area">
+
+    <md-form-field>
+      <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+      <md-datepicker #picker></md-datepicker>
+
+      <input mdInput [mdDatepicker]="picker" placeholder="MM/DD/YYYY" class='text-input'>
+    </md-form-field>
+
+  </div>
 
